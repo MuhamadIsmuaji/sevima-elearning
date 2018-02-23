@@ -1,0 +1,1 @@
+<?php $this->load->view('error_msg/index') ?>
