@@ -8,6 +8,12 @@
 
     <!-- css libs -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bulma.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/font-awesome.min.css') ?>">  
+    
+    <!-- js libs -->
+    <script type="text/javascript" src="<?= base_url('assets/js/jquery-3.3.1.min.js') ?>"></script>
+    <script type="text/javascript" src="<?= base_url('assets/js/nav.js') ?>"></script>
+    
 </head>
 <body>
 
@@ -16,14 +22,14 @@
         <a class="navbar-item" href="<?= base_url('/') ?>">
             Sevima E-Learning
         </a>
-        <div class="navbar-burger">
+        <div class="navbar-burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
 
-    <div class="navbar-menu">
+    <div class="navbar-menu" id="navMenu">
         <div class="navbar-end">
             <a href="https://kelaslaravel.com" class="navbar-item">Kelas</a>
             <a href="https://kawankoding.com/course" class="navbar-item">Seri</a>
