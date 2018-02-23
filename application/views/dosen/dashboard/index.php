@@ -1,1 +1,1 @@
-Dashboard index dosen
+<?php $this->load->view('error_msg/index') ?>

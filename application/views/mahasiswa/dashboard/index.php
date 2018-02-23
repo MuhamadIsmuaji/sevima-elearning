@@ -1,1 +1,1 @@
-Dashboard index mahasiswa
+<?php $this->load->view('error_msg/index') ?>
