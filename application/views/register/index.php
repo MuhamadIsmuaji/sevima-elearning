@@ -1,4 +1,4 @@
-<section class="hero is-primary is-bold has-text-centered">
+<section class="hero is-light is-bold has-text-centered">
     <div class="hero-body">
         <div class="container">
             <h1 class="title">Belum Punya Akun ?</h1>

@@ -54,6 +54,10 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
 
 $route['home'] = 'home';
+$route['courses/getAll/(:num)/(:num)/(:any)'] = 'course/getAll/$1/$2/$3';
+$route['courses/detail/(:num)'] = 'course/detail/$1';
+$route['courses/download/(:any)'] = 'course/download/$1';
+$route['comments/create'] = 'comment/create';
 $route['login'] = 'login';
 $route['logout'] = 'login/logout';
 $route['register'] = 'register';
@@ -63,6 +67,13 @@ $route['backend'] = 'admin/dashboard';
 
 // DOSEN
 $route['dosen'] = 'dosen/dashboard';
+$route['dosen/courses'] = 'dosen/course';
+$route['dosen/courses/getall/(:num)/(:num)/(:any)'] = 'dosen/course/getall/$1/$2/$3';
+$route['dosen/courses/create'] = 'dosen/course/create';
+$route['dosen/courses/update/(:num)'] = 'dosen/course/update/$1';
+$route['dosen/courses/detail/(:num)'] = 'dosen/course/detail/$1';
+$route['dosen/courses/delete/(:num)'] = 'dosen/course/delete/$1';
+
 
 // MAHASIWA
 $route['mahasiswa'] = 'mahasiswa/dashboard';
