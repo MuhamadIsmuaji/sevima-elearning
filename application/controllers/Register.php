@@ -46,6 +46,8 @@ class Register extends CI_Controller
         } else {
             $post = $this->input->post();
             $redirectTo = 'register';
+            $type = 'feedback_danger';
+            $message = '';
 
 //          Form validation rules and error messages
             $this->form_validation->set_rules('name', 'Nama Lengkap', 'trim|required|max_length[50]', [
@@ -78,7 +80,7 @@ class Register extends CI_Controller
             ]);                                    
 
             if (!$this->form_validation->run()) {
-                $this->session->set_flashdata('feedback_danger', validation_errors());                
+                $message = validation_errors();
             } else {
                 $data = [
                     'email' => $post['email'],
@@ -91,6 +93,7 @@ class Register extends CI_Controller
                 $message = '<strong>Maaf,</strong> terjadi kesalahan silahkan ulangi lagi.';
 
                 if ($this->users->insert($data)) {
+                    $type = 'feedback_success';
                     $message = '<strong>Halo,</strong> ' . $data['name'] . '. Selamat datang di Sevima E-Learning.';
 
                     $auth = $this->users->findOne([
@@ -99,12 +102,13 @@ class Register extends CI_Controller
                     ]);
                     
                     $redirectTo = Lib::getRedirectTo($auth->role_id);
+//                  loged in user
                     $this->session->set_userdata('sevima-elearning', $auth);                    
                 }
 
             }
 
-            $this->session->set_flashdata('feedback_success', $message);                            
+            $this->session->set_flashdata($type, $message);                            
             redirect($redirectTo);                            
         }
     }

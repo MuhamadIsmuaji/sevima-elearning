@@ -1,8 +1,8 @@
-<section class="hero is-primary is-bold has-text-centered">
+<section class="hero is-light is-bold has-text-centered">
     <div class="hero-body">
         <div class="container">
             <h1 class="title">Silakan Login</h1>
-            <h2 class="subtitle">Masuk dan berkumpullah dengan kawan kawan developer keren lainnya !</h2>
+            <h2 class="subtitle">Masuk dan mari saling bertukan ilmu pengetahuan !</h2>
         </div>
     </div>
 </section>
@@ -10,7 +10,7 @@
 <div class="container section">
     <div class="columns">
         <div class="column is-6 is-offset-3">
-            <h1 class="is-size-3">Masuk Kawan Koding</h1>            
+            <h1 class="is-size-3">Masuk Disini</h1>            
             <div class="box">
                 <?php $this->load->view('error_msg/index') ?>
                 <form method="post" action="<?= base_url('login') ?>">

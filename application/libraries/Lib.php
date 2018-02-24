@@ -14,7 +14,7 @@ class Lib
                 break;
 
             default:
-                return 'mahasiswa';
+                return 'home';
                 break;
         }
     }
