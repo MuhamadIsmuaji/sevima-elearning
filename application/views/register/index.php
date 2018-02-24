@@ -2,7 +2,7 @@
     <div class="hero-body">
         <div class="container">
             <h1 class="title">Belum Punya Akun ?</h1>
-            <h2 class="subtitle">Buat akunmu sekarang, bergabung dan mari saling berbagi dengan kawan kawan developer keren lainnya !</h2>
+            <h2 class="subtitle">Buat akunmu sekarang, bergabung dan mari saling berbagi ilmu pengetahuan !</h2>
         </div>
     </div>
 </section>
